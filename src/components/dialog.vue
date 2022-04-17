@@ -1,4 +1,9 @@
 <template>
+<!-- 广播厅窗口 -->
+<!-- 聊天窗口 -->
+<!-- 主播直播窗口 -->
+<!-- 后台管理系统 -->
+
 <!-- 子组件绑定传值事件 -->
   <div @click="giveParams" class="dialog">这是一个弹框</div>
 </template>

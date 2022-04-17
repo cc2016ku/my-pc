@@ -7,18 +7,28 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: () => import("@/components/home.vue"),
+    component: () => import("@/pages/home.vue"),
   },
   {
-    path: "/setting",
-    name: "setting",
-    component: () => import("@/components/setting.vue"),
+    path: "/my-follow",
+    name: "my-follow",
+    component: () => import("@/pages/my-follow.vue"),
   },
   {
-    path: "/goods",
-    name: "goods",
-    component: () => import("@/components/goods.vue"),
-  }
+    path: "/self-setting",
+    name: "self-setting",
+    component: () => import("@/pages/self-setting.vue"),
+  },
+  {
+    path: "/hot-top",
+    name: "hot-top",
+    component: () => import("@/pages/hot-top.vue"),
+  },
+  {
+    path: "/info-list",
+    name: "info-list",
+    component: () => import("@/pages/info-list.vue"),
+  },
 ];
 
 const router = new VueRouter({

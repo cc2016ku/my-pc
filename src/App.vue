@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">商城首页</router-link> |
-      <router-link to="/goods">商品列表</router-link> |
-      <router-link to="/setting">个人中心</router-link>
+      <router-link to="/" class="tab-page">首页</router-link>
+      <router-link to="/hot-top" class="tab-page">热榜排行</router-link>
+      <router-link to="/my-follow" class="tab-page">我的关注</router-link>
+      <router-link to="/info-list" class="tab-page">消息列表</router-link>
+      <router-link to="/self-setting" class="tab-page">个人中心</router-link>
     </div>
     <router-view />
   </div>
@@ -17,19 +19,28 @@ export default {};
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: #eee;
+  // width: 100%;
+  box-sizing: border-box;
 }
 
 #nav {
-  padding: 30px;
-
+  padding: 15px 50px;
+  background: #074685;
+  display: flex;
+  justify-content: space-between;
+  .tab-page {
+    width: 100px;
+    text-align: center;
+  }
   a {
     font-weight: bold;
-    color: #2c3e50;
-
+    color: #eee;
+    text-decoration: none;
+    padding: 2px 0;
     &.router-link-exact-active {
-      color: #42b983;
+      color: rgb(237, 233, 175);
+      box-shadow: 0 2px 3px rgb(194, 12, 106);
     }
   }
 }
