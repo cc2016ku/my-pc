@@ -37,8 +37,8 @@ export default {
 <style lang="less" scoped>
 .my-follow .personal-broadcast li {
   width: 40%;
-  height: 300px;
-  line-height: 300px;
+  height: 320px;
+  line-height: 320px;
   margin-left: 6%;
   border-radius: 20px;
 }

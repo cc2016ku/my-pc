@@ -125,26 +125,9 @@ export default {
 .select-broadcast {
   padding-left: 20px;
 }
-.types-header {
-  display: flex;
-  height: 30px;
-  line-height: 30px;
-  margin: 10px 20px 0 0;
-  background: lemonchiffon;
-  justify-content: space-around;
-  li {
-    cursor: pointer;
-    width: 20%;
-    height: 100%;
-    text-align: center;
-    &:hover {
-      background: lightcoral;
-    }
-  }
-}
 .select-broadcast ::v-deep .el-tabs__header {
   margin: 0 20px 0 0;
-  background: lemonchiffon;
+  background: rgb(255, 190, 211);
   .el-tabs__item {
     font-size: 16px;
     font-weight: bold;

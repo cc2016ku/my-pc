@@ -2,6 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/" class="tab-page">首页</router-link>
+      <router-link to="/link-check" class="tab-page">聊天广场</router-link>
       <router-link to="/hot-top" class="tab-page">热榜排行</router-link>
       <router-link to="/my-follow" class="tab-page">我的关注</router-link>
       <router-link to="/info-list" class="tab-page">消息列表</router-link>
@@ -19,9 +20,7 @@ export default {};
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #eee;
-  // width: 100%;
-  box-sizing: border-box;
+  color: #eee;  box-sizing: border-box;
 }
 
 #nav {

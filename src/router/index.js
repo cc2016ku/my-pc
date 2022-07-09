@@ -10,14 +10,9 @@ const routes = [
     component: () => import("@/pages/home.vue"),
   },
   {
-    path: "/my-follow",
-    name: "my-follow",
-    component: () => import("@/pages/my-follow.vue"),
-  },
-  {
-    path: "/self-setting",
-    name: "self-setting",
-    component: () => import("@/pages/self-setting.vue"),
+    path: "/link-check",
+    name: "link-check",
+    component: () => import("@/pages/link-check.vue"),
   },
   {
     path: "/hot-top",
@@ -25,10 +20,22 @@ const routes = [
     component: () => import("@/pages/hot-top.vue"),
   },
   {
+    path: "/my-follow",
+    name: "my-follow",
+    component: () => import("@/pages/my-follow.vue"),
+  },
+  {
     path: "/info-list",
     name: "info-list",
     component: () => import("@/pages/info-list.vue"),
   },
+  {
+    path: "/self-setting",
+    name: "self-setting",
+    component: () => import("@/pages/self-setting.vue"),
+  },
+
+
 ];
 
 const router = new VueRouter({

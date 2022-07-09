@@ -51,27 +51,26 @@ export default {
 .hot-tip {
   padding: 10px 30px;
 }
-.hot-top .personal-broadcast li {
+.personal-broadcast li {
   width: 30%;
   height: 300px;
   line-height: 300px;
   margin-left: 2%;
-  color: #ffffee;
+  color: #333;
   border-radius: 12px;
-
   &:nth-of-type(1) {
     border-radius: 20px;
-    background: rgb(233, 59, 114);
+    background-color: rgb(233, 59, 114);
     box-shadow: 0 0 30px rgb(233, 59, 114);
   }
   &:nth-of-type(2) {
     border-radius: 20px;
-    background: rgb(238, 91, 130);
+    background-color: rgb(238, 91, 130);
     box-shadow: 0 0 20px rgb(233, 59, 114);
   }
   &:nth-of-type(3) {
     border-radius: 20px;
-    background: rgb(240, 116, 155);
+    background-color: rgb(240, 116, 155);
     box-shadow: 0 0 15px rgb(233, 59, 114);
   }
   &:nth-of-type(4),
@@ -81,11 +80,11 @@ export default {
   &:nth-of-type(8),
   &:nth-of-type(9) {
     border-radius: 15px;
-    background: rgb(246, 150, 180);
+    background-color: rgb(246, 150, 180);
     box-shadow: 0 0 10px rgb(233, 59, 114);
   }
   &:hover {
-    box-shadow: 3px -5px 5px rgb(251, 247, 207);
+    box-shadow: 3px -5px 5px rgb(255, 190, 211);
   }
 }
 </style>

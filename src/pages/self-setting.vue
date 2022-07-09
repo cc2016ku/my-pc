@@ -34,9 +34,10 @@ export default {
   align-items: center;
   .setting-li {
     text-align: center;
-    width: 10%;
-    height: 30px;
-    line-height: 30px;
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
     background: lemonchiffon;
     margin: 10px;
     color: #2c3e50;

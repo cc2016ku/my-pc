@@ -1,6 +1,6 @@
 <template>
   <div class="info-list">
-    <ul>
+    <ul class="msg-ul">
       <li
         class="msg-li"
         v-for="item in msgArr"
@@ -76,45 +76,52 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-.msg-li {
-  height: 30px;
-  line-height: 30px;
-  background: lemonchiffon;
-  margin: 10px;
-  color: #2c3e50;
-  &:hover {
-    cursor: pointer;
+.msg-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .msg-li {
+    width: 50%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    background: lemonchiffon;
+    margin: 10px;
+    color: #2c3e50;
+    &:hover {
+      cursor: pointer;
+    }
+    .msg-name {
+      float: right;
+      padding-right: 30px;
+    }
+    .msg-info {
+      width: 60%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      float: left;
+      padding-left: 30px;
+    }
+    .is-friend {
+      background: #6ca8f6;
+      padding: 3px 6px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+    .msg-count {
+      display: inline-block;
+      width: 30px;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      border-radius: 50%;
+      background: #e6437f;
+      font-size: 12px;
+    }
   }
-  .msg-name {
-    float: right;
-    padding-right: 30px;
+  .msg-friend {
+    background: rgb(246, 150, 180);
   }
-  .msg-info {
-    width: 60%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    float: left;
-    padding-left: 30px;
-  }
-  .is-friend {
-    background: #6ca8f6;
-    padding: 3px 6px;
-    border-radius: 5px;
-    font-size: 12px;
-  }
-  .msg-count {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    text-align: center;
-    border-radius: 50%;
-    background: #e6437f;
-    font-size: 12px;
-  }
-}
-.msg-friend {
-  background: rgb(246, 150, 180);
 }
 </style>
