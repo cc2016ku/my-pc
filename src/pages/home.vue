@@ -98,7 +98,7 @@ export default {
         { type: "学习", id: "1" },
         { type: "生活", id: "2" },
         { type: "情感", id: "3" },
-        { type: "运动", id: "4" },
+        { type: "户外", id: "4" },
         { type: "娱乐", id: "5" },
       ],
       activeName: "1",
